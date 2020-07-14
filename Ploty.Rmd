@@ -1,0 +1,17 @@
+---
+title: "R Markdown Presentation and Plotly"
+author: "Ashish Kumar Dwivedi"
+date: "July 14, 2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## March 18, 2017
+### Correlation between MPG and DISP in MTCARS data
+```{r, echo=FALSE, message=FALSE, warning=FALSE,fig.width=6, fig.height=4}
+library(plotly)
+plot_ly(mtcars, x=~mpg, y=~disp, mode="markers") 
+```
